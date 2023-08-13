@@ -82,7 +82,35 @@ input[type=number] {
     color: black; 
 
 }
+.reset-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
 
+.reset-button #reset {
+  position: relative;
+  padding: 3% 18% 3% 18%;
+  background-color: #016e74;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00494d;
+
+  /* Hover effect */
+  transition: background-color 0.3s ease;
+}
+
+
+
+.reset-button #reset:active {
+  transform: translateY(1px);
+  background-color: #015e63;
+}
 
 hr{
     border: none;

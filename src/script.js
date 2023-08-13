@@ -37,5 +37,9 @@ function calculateTip(){
     document.getElementById("tip-per-person").textContent = `\$ ${tipPerPerson}`;
     document.getElementById("total-per-person").textContent = `\$ ${totalPerPerson}`;
 }
-
+const resetButton = document.getElementById('reset');
+resetButton.addEventListener('click', () => {
+    billInput.value = '0.00';
+    calculateTip();
+});
 calculateTip();
