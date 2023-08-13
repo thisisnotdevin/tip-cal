@@ -5,7 +5,7 @@
     <title>Tip Calculator</title>
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    
+ 
     <!--style-->
     <link rel="stylesheet" href="style.css">
     
@@ -37,6 +37,7 @@
             </div>
         </section>
         <section>
+            
             <div class="wrapper">
                 <label for="tip" class="lbl">
                     Tip %
@@ -45,6 +46,7 @@
                     0
                 </span>
             </div>
+            
             <input type="range" min="0" id="tip" value="15">
             <div class="wrapper">
                 <label for="PeopleAmount" class="lbl">
@@ -56,10 +58,12 @@
             </div>
             <input type="range" min="1" max="15" id="PeopleAmount" value="1">
         </section>
-        <section>
+        <section class="bill-total">
             <div class="wrapper">
                 <span class="lbl">
-                    Tip Per Person
+                    Tip 
+                    <br>
+                    <span class="gray-text">/ Person</span>
                 </span>
                 <span id="tip-per-person" class="val">
                     $0
@@ -67,7 +71,9 @@
             </div>
             <div class="wrapper">
                 <span class="lbl">
-                    Total Per Person
+                    Total 
+                    <br>
+                    <span class="gray-text">/ Person</span>
                 </span>
                 <span id="total-per-person" class="val">
                     $0

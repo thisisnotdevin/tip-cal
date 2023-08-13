@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.4px;
+    font-family: 'Source Code Pro', monospace;
     
 }
 body{
-    background-color: #E6E4DD;
+    background-color: #00494d;
 }
 .container{
     background-color: #ffffff;
@@ -27,6 +28,10 @@ body{
     justify-content: space-between;
     margin: 12px 0;
 }
+.wrapper #total-amount{
+  font-size: 28px;
+  font-weight: bold;
+}
 .lbl{
     font-size: 16px;
     color: #44475b;
@@ -39,13 +44,17 @@ body{
     font-weight: 500;
     font-size: 18px;
 }
-
+.input-box #bill {
+  color: black; /* Change the text color to white */
+}
 .input-box{
-    background-color: #E6E4DD;
-    color: black;
+    background-color: #e0e6e6b4;
+    
     padding: 5px;
     border-radius: 5px;
 }
+
+
 .input-box:focus{
   background-color: #44475b;
   outline: none;
@@ -182,16 +191,34 @@ section:not(:first-child){
     
 }
 section:last-child{
-    background-color: #E6E4DD;
+    background-color: #00494d;
     padding: 10px;
     border-radius: 5px;
     
 }
 section:last-child .val,
 section:last-child .lbl{
-    color: black;
+    color: white;
+    
+}
+.wrapper #tip-per-person{
+  color: #26c0ab;
+  font-size: 24px;
+  font-weight: bold;
+}
+.wrapper #total-per-person{
+  color: #26c0ab;
+  font-size: 30px;
+  font-weight: bold;
 }
 main{
   display: flex;
   flex-wrap: wrap;
+}
+.gray-text {
+  color: gray;
+  font-size: 12px;
+}
+.bill-total div{
+  padding: 1rem;
 }
